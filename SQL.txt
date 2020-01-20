@@ -1,0 +1,19 @@
+CREATE DATABASE MedicalDB
+
+CREATE TABLE dbo.Orders
+(
+OrderID bigint IDENTITY(1,1) NOT NULL,
+OrderName varchar (1000),
+Description varchar (1000),
+OrderDate date
+)
+
+CREATE TABLE dbo.Customers
+(
+CustomerID bigint identity(1,1) NOT NULL,
+CustomerName varchar (1000),
+CustomerAddress varchar (1000),
+EmailID varchar (1000),
+PhoneNO bigint
+)
+
